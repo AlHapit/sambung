@@ -29,6 +29,17 @@ class UserFactory extends Factory
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
+            'age' => fake()->numberBetween(16, 75),
+            'location' => fake()->randomElement([
+                'Jakarta Selatan',
+                'Bandung',
+                'Depok',
+                'Tangerang Selatan',
+            ]),
+            'latitude' => fake()->randomFloat(7, -6.35, -6.15),
+            'longitude' => fake()->randomFloat(7, 106.70, 106.95),
+            'role' => 'user',
+            'simple_mode' => false,
             'remember_token' => Str::random(10),
         ];
     }
@@ -40,6 +51,20 @@ class UserFactory extends Factory
     {
         return $this->state(fn (array $attributes) => [
             'email_verified_at' => null,
+        ]);
+    }
+
+    public function organizer(): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'role' => 'organizer',
+        ]);
+    }
+
+    public function admin(): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'role' => 'admin',
         ]);
     }
 }
