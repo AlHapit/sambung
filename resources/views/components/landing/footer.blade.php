@@ -1,0 +1,6 @@
+<footer id="kontak" class="mx-auto grid w-full max-w-[1366px] gap-10 px-7 py-14 sm:px-[90px] lg:grid-cols-[340px_188px_225px_1fr] lg:gap-0 lg:py-[58px]">
+    <div class="flex items-start"><img src="{{ asset('images/landing/feature-1.jpeg') }}" alt="Sambung" class="h-[97px] w-[281px] object-cover"></div>
+    <div class="border-l border-black/10 pl-5"><h2 class="text-[18px] font-semibold">Navigasi</h2><div class="mt-6 flex flex-col gap-[10px] text-[12px] font-medium"><a href="#beranda">Beranda</a><a href="#fitur">Fitur</a><a href="#tentang">Tentang</a><a href="#kontak">Kontak</a></div></div>
+    <div class="border-l border-black/10 pl-5"><h2 class="text-[18px] font-semibold">Bantuan</h2><div class="mt-6 flex flex-col gap-[10px] text-[12px] font-medium"><a href="#kontak">Pusat Bantuan</a><a href="#kontak">Panduan Pengguna</a><a href="#kontak">Kebijakan Privasi</a><a href="#kontak">Syarat &amp; Ketentuan</a></div></div>
+    <div class="border-l border-black/10 pl-5"><h2 class="text-[18px] font-semibold">Kontak Kami</h2><div class="mt-6 flex gap-[19px]" aria-label="Tautan media sosial"><span class="size-6 rounded-full bg-[#1a532a]"></span><span class="size-6 rounded-full bg-[#1a532a]"></span><span class="size-6 rounded-full bg-[#1a532a]"></span><span class="size-6 rounded-full bg-[#1a532a]"></span></div></div>
+</footer>

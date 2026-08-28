@@ -7,7 +7,7 @@ use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing.index');
 });
 
 Route::middleware('guest')->group(function (): void {
