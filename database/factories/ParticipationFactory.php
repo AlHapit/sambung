@@ -2,8 +2,8 @@
 
 namespace Database\Factories;
 
-use App\Models\Participation;
 use App\Models\Event;
+use App\Models\Participation;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 

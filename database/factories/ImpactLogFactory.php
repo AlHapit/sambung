@@ -5,7 +5,6 @@ namespace Database\Factories;
 use App\Models\ImpactLog;
 use App\Models\Participation;
 use App\Models\Session;
-use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**

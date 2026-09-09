@@ -2,8 +2,8 @@
 
 namespace Database\Factories;
 
-use App\Models\Session;
 use App\Models\Connection;
+use App\Models\Session;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
