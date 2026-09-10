@@ -3,7 +3,7 @@
         {{-- Logo --}}
         <div class="flex items-center gap-3 px-2 mb-8">
             <a href="{{ route('dashboard') }}" class="flex items-center gap-2">
-                <img src="{{ asset('images/auth/sambung.png') }}" alt="{{ config('app.name') }}" class="h-10 w-auto object-contain brightness-0 invert">
+                <img src="{{ asset('images/landing/sambung.png') }}" alt="{{ config('app.name') }}" class="h-9 w-auto object-contain brightness-0 invert">
             </a>
         </div>
 
@@ -61,8 +61,7 @@
                 src="{{ auth()->user()->avatar ?? asset('gambar.png') }}"
                 alt="{{ auth()->user()->name }}"
                 class="size-10 rounded-full bg-white/20 object-cover"
-                onerror="this.onerror=null; this.src='{{ asset('gambar.png') }}';"
-            >
+                onerror="this.onerror=null; this.src='{{ asset('gambar.png') }}';">
             <div class="min-w-0 flex-1">
                 <p class="truncate text-xs font-semibold text-white leading-tight">{{ auth()->user()->name }}</p>
                 <a href="#" class="text-[11px] text-white/70 hover:underline">Lihat Profil</a>
@@ -73,8 +72,7 @@
             @csrf
             <button
                 type="submit"
-                class="flex w-full items-center gap-2.5 rounded-xl px-3.5 py-2 text-xs font-medium text-white/80 transition hover:bg-red-500/20 hover:text-red-200"
-            >
+                class="flex w-full items-center gap-2.5 rounded-xl px-3.5 py-2 text-xs font-medium text-white/80 transition hover:bg-red-500/20 hover:text-red-200">
                 <svg class="size-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9" />
                 </svg>
